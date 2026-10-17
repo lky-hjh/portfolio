@@ -1,0 +1,76 @@
+/*
+ * Design tokens — 唯一色值来源
+ * 任何组件禁止硬编码 #hex / rgb()，一律走这里的 token
+ * 见 docs/portfolio-spec.md §1
+ */
+@theme {
+  /* ---- 背景层级（越靠上越"接近用户"） ---- */
+  --color-bg: #08090b;
+  --color-surface-1: #0e1013;
+  --color-surface-2: #15181d;
+  --color-surface-3: #1c2027;
+
+  --color-line: rgba(255, 255, 255, 0.08);
+  --color-line-strong: rgba(255, 255, 255, 0.14);
+
+  /* ---- 文字 ---- */
+  --color-fg: #f2f4f7;
+  --color-fg-muted: #9ba3af;
+  --color-fg-subtle: #6b7280;
+
+  /* ---- 强调色（全站仅此两族） ---- */
+  --color-brand: #ff7a45;
+  --color-brand-from: #ff9a4d;
+  --color-brand-to: #ff5e3a;
+  --color-cool: #5eead4;
+
+  /* ---- 字体：0 网络请求，中文走系统栈 ---- */
+  --font-sans:
+    "PingFang SC", "Noto Sans SC", "Microsoft YaHei", "Hiragino Sans GB",
+    system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono:
+    ui-monospace, "SFMono-Regular", "JetBrains Mono", Menlo, Consolas, monospace;
+
+  /* ---- 流体字号阶梯 ---- */
+  --text-display: clamp(2.75rem, 8vw, 6rem);
+  --text-display--line-height: 1.02;
+  --text-display--letter-spacing: -0.04em;
+
+  --text-h1: clamp(2rem, 4vw, 3rem);
+  --text-h1--line-height: 1.1;
+  --text-h1--letter-spacing: -0.025em;
+
+  --text-h2: clamp(1.375rem, 2.4vw, 1.875rem);
+  --text-h2--line-height: 1.25;
+  --text-h2--letter-spacing: -0.015em;
+
+  --text-body: clamp(0.9375rem, 1.2vw, 1.0625rem);
+  --text-body--line-height: 1.75;
+
+  --text-mono: 0.75rem;
+  --text-mono--line-height: 1;
+  --text-mono--letter-spacing: 0.1em;
+
+  /* ---- 圆角 ---- */
+  --radius-card: 18px;
+  --radius-chip: 8px;
+  --radius-pill: 999px;
+
+  /* ---- 缓动 ---- */
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* ---- 唯一允许的循环动画：Hero 光束缓慢漂移 ---- */
+  --animate-beam: beam-drift 11s ease-in-out infinite;
+}
+
+@keyframes beam-drift {
+  0%,
+  100% {
+    transform: translateX(-14%);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateX(14%);
+    opacity: 0.9;
+  }
+}

@@ -1,0 +1,12 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+.vite
+
+# 本地截图验证产物
+shots/
+shot.cjs
+shot-hero.png
+.playwright-cli/
