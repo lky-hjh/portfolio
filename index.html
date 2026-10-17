@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>何俊宏 · 个人主页</title>
-<meta name="description" content="何俊宏 - 游戏客户端 / AI 技术美术方向个人主页与作品集" />
+<title>梁可悦 · 个人主页</title>
+<meta name="description" content="梁可悦 - 用户运营 / 私域运营方向个人主页与作品集" />
 <style>
   :root {
     --text: #1f2328;
@@ -12,7 +12,7 @@
     --line: #e4e7eb;
     --bg: #ffffff;
     --bg-soft: #f7f8fa;
-    --accent: #2f6feb;
+    --accent: #c2410c;
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
@@ -21,7 +21,7 @@
     background: var(--bg);
     color: var(--text);
     font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", system-ui, -apple-system, "Segoe UI", sans-serif;
-    line-height: 1.7;
+    line-height: 1.75;
     -webkit-font-smoothing: antialiased;
   }
   .wrap { max-width: 780px; margin: 0 auto; padding: 0 24px; }
@@ -48,17 +48,15 @@
     background: var(--bg-soft); border: 1px solid var(--line); color: var(--text-soft);
   }
 
-  .item { margin-bottom: 26px; }
+  .item { margin-bottom: 34px; }
   .item:last-child { margin-bottom: 0; }
   .item-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
   .item-title { font-size: 16px; font-weight: 600; margin: 0; }
+  .item-role { font-weight: 400; color: var(--text-soft); font-size: 14px; }
   .item-meta { font-size: 13px; color: var(--text-soft); white-space: nowrap; }
-  .item-desc { font-size: 14.5px; color: var(--text-soft); margin: 6px 0 0; }
-  .item-desc strong { color: var(--text); font-weight: 600; }
-
-  .timeline li { margin-bottom: 14px; font-size: 14.5px; }
-  ul.timeline { list-style: none; padding: 0; margin: 0; }
-  ul.timeline li::before { content: "· "; color: var(--accent); font-weight: 700; }
+  ul.duties { margin: 10px 0 0; padding-left: 18px; font-size: 14.5px; color: var(--text-soft); }
+  ul.duties li { margin-bottom: 6px; }
+  ul.duties li strong { color: var(--text); font-weight: 600; }
 
   footer { padding: 32px 0 56px; font-size: 13px; color: var(--text-soft); }
 
@@ -72,93 +70,84 @@
 <div class="wrap">
 
   <header>
-    <h1>何俊宏</h1>
-    <p class="subtitle">游戏客户端开发 / AI 技术美术 · 东莞理工学院 计算机科学与技术（多媒体）2023 级</p>
+    <h1>梁可悦</h1>
+    <p class="subtitle">用户运营 / 私域运营 · <!-- TODO: 学校 + 专业 --></p>
     <div class="links">
-      <a href="https://github.com/lky-hjh">GitHub</a>
       <a href="mailto:your-email@example.com">邮箱</a>
-      <a href="#projects">项目</a>
+      <a href="#experience">实习经历</a>
+      <a href="#skills">能力</a>
     </div>
   </header>
 
   <section>
     <h2>关于我</h2>
-    <p>跨平台游戏开发者，主力使用 Unreal Engine 5 与 Unity 进行原型开发，同时具备 Android、Web 与桌面工具的开发经验。
-       目前在腾讯实习，岗位为 <strong>AI 技术美术</strong>，负责把 AI 能力接入美术生产流程。</p>
-    <p>工程习惯上偏好 <strong>C++ 基类 + 蓝图子类</strong> 的分层结构，注重数据驱动（DataAsset）与模块解耦，
-       正在系统学习 OpenGL 图形编程，补齐渲染底层知识。</p>
+    <p>运营方向实习生，专注 <strong>私域社群运营</strong> 与 <strong>用户运营</strong>：从社群活跃与维系，到每周销售活动策划、数据复盘与优化，
+       再到引导用户产出 UGC、沉淀品牌 KOC，做的是「把用户留下来并持续产生价值」这件事。</p>
+    <p>此前一段内容运营实习补齐了另一侧的能力：全平台账号运营、拍摄剪辑、直播跟播与转化链路。
+       内容与私域的组合，让我能独立跑通 <strong>内容获客 → 社群承接 → 活动转化 → 反馈回流</strong> 的闭环。</p>
   </section>
 
-  <section>
-    <h2>技能</h2>
+  <section id="skills">
+    <h2>核心能力</h2>
     <div class="tags">
-      <span class="tag">Unreal Engine 5</span>
-      <span class="tag">C++</span>
-      <span class="tag">Blueprint</span>
-      <span class="tag">GAS</span>
-      <span class="tag">Unity / C#</span>
-      <span class="tag">OpenGL</span>
-      <span class="tag">Android (Kotlin + Compose)</span>
-      <span class="tag">Vue 3</span>
-      <span class="tag">Vite</span>
-      <span class="tag">Tailwind CSS</span>
-      <span class="tag">Python</span>
-      <span class="tag">Git</span>
+      <span class="tag">私域社群运营</span>
+      <span class="tag">用户运营</span>
+      <span class="tag">活动策划与执行</span>
+      <span class="tag">数据复盘</span>
+      <span class="tag">用户拉新与留存</span>
+      <span class="tag">UGC / KOC 培育</span>
+      <span class="tag">内容运营</span>
+      <span class="tag">短视频拍摄剪辑</span>
+      <span class="tag">直播运营（副播）</span>
+      <span class="tag">跨部门协作</span>
+      <span class="tag">推送排期管理</span>
+      <span class="tag">用户反馈收集</span>
     </div>
   </section>
 
-  <section id="projects">
-    <h2>项目</h2>
+  <section id="experience">
+    <h2>实习经历</h2>
 
     <div class="item">
       <div class="item-head">
-        <h3 class="item-title">RatSiege — UE5 塔防游戏</h3>
-        <span class="item-meta">2025 · UE 5.7 / C++</span>
+        <h3 class="item-title">佛山市小熊电器股份有限公司 <span class="item-role">私域运营 + 用户运营 实习生</span></h3>
+        <span class="item-meta">2026.09 - 2027.02</span>
       </div>
-      <p class="item-desc">
-        个人主导的塔防原型。采用 C++ 基类 + BP 子类架构（TDBase、TDMainHUD、FTowerStats），
-        基于 DataAsset 实现可配置的波次系统；用 TSoftClassPtr 解决蓝图循环依赖，
-        并逐步将 UI 逻辑从蓝图迁移到 C++。
-      </p>
+      <ul class="duties">
+        <li><strong>社群活跃与维系</strong>：负责私域社群日常活跃与用户关系维护</li>
+        <li><strong>销售活动策划与复盘</strong>：策划每周社群销售活动，进行数据复盘，持续优化销售额</li>
+        <li><strong>推送排期</strong>：根据各部门需求，对私域社群的推送内容进行排期管理</li>
+        <li><strong>UGC 与 KOC 沉淀</strong>：策划活动并引导用户产出 UGC，为品牌积累优质 KOC 与口碑，提升品牌知名度与影响力</li>
+        <li><strong>新品试用闭环</strong>：与需求部门对接，筛选用户参与新产品试用，收集并回流用户反馈以优化产品</li>
+        <li><strong>拉新与留存</strong>：定期策划回馈顾客活动（如异业合作活动），提升用户拉新与留存</li>
+      </ul>
     </div>
 
     <div class="item">
       <div class="item-head">
-        <h3 class="item-title">Mcdull — 个人作品集网站</h3>
-        <span class="item-meta">Vue 3 / Vite / Tailwind</span>
+        <h3 class="item-title">佛山市扬森网络科技有限公司 <span class="item-role">内容运营 实习生</span></h3>
+        <span class="item-meta">2026.07 - 2026.09</span>
       </div>
-      <p class="item-desc">
-        用于展示开发作品与博客的静态站点，通过 GitHub Actions 自动构建部署。
-      </p>
-    </div>
-
-    <div class="item">
-      <div class="item-head">
-        <h3 class="item-title">AppLaunch — 桌面启动工具</h3>
-        <span class="item-meta">Python / Tkinter</span>
-      </div>
-      <p class="item-desc">
-        轻量级应用启动器，使用 PyInstaller 打包为独立可执行文件。
-      </p>
+      <ul class="duties">
+        <li><strong>全平台账号运营</strong>：独立运营「粤探」「粤探四眼仔榴莲」两个账号，覆盖抖音、小红书、视频号</li>
+        <li><strong>内容生产</strong>：负责视频拍摄与剪辑</li>
+        <li><strong>直播运营</strong>：担任副播，负责跟播、上链接等直播执行工作</li>
+        <li><strong>私域承接</strong>：运营私域粉丝群，策划回馈活动，提升群内粉丝留存</li>
+      </ul>
     </div>
   </section>
 
   <section>
-    <h2>经历</h2>
-    <ul class="timeline">
-      <li><strong>腾讯 · AI 技术美术（实习）</strong> — 参与 AI 能力与美术工作流的结合落地</li>
-      <li><strong>课程项目</strong> — 农产品电商平台系统分析与设计：需求建模、序列图/协作图、Axure 原型</li>
-      <li><strong>自学</strong> — LearnOpenGL 图形编程教程、GAS 游戏能力系统</li>
-    </ul>
+    <h2>教育背景</h2>
+    <p>（待补充：学校 / 专业 / 在校时间）</p>
   </section>
 
   <section>
     <h2>联系</h2>
-    <p>邮箱：<a href="mailto:your-email@example.com" style="color:var(--accent);text-decoration:none">your-email@example.com</a><br />
-       GitHub：<a href="https://github.com/lky-hjh" style="color:var(--accent);text-decoration:none">github.com/lky-hjh</a></p>
+    <p>邮箱：<a href="mailto:your-email@example.com" style="color:var(--accent);text-decoration:none">your-email@example.com</a></p>
   </section>
 
-  <footer>© 2026 何俊宏 · 本页由 GitHub Pages 托管</footer>
+  <footer>© 2026 梁可悦 · 本页由 GitHub Pages 托管</footer>
 
 </div>
 </body>
