@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>梁可悦 · 简历</title>
+<link rel="stylesheet" href="styles.css" />
+<style>
+  .resume { max-width: 800px; margin: 0 auto; padding: 32px 40px 48px; }
+
+  .r-head { border-bottom: 2px solid var(--text); padding-bottom: 12px; margin-bottom: 4px; }
+  .r-name { font-size: 26px; font-weight: 700; letter-spacing: 2px; margin: 0; }
+  .r-intent { color: var(--text-soft); font-size: 13.5px; margin: 4px 0 0; }
+  .r-contact { font-size: 13px; color: var(--text-soft); display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 8px; }
+
+  h3.r-sec {
+    font-size: 14px; font-weight: 700; margin: 20px 0 8px;
+    border-left: 3px solid var(--accent); padding-left: 8px; letter-spacing: 1px;
+  }
+  .r-row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .r-org { font-size: 14px; font-weight: 600; }
+  .r-role { font-size: 13px; color: var(--accent); font-weight: 600; }
+  .r-date { font-size: 12.5px; color: var(--text-soft); white-space: nowrap; }
+  ul.r-list { margin: 6px 0 0; padding-left: 18px; font-size: 13px; line-height: 1.65; color: var(--text-soft); }
+  ul.r-list li { margin-bottom: 2px; }
+  ul.r-list li strong { color: var(--text); font-weight: 600; }
+  .r-note { font-size: 12.5px; color: var(--text-soft); margin: 4px 0 0; }
+
+  .r-skills { font-size: 13px; line-height: 1.9; }
+  .r-skills span { margin-right: 6px; }
+
+  .print-tip { font-size: 12px; color: var(--text-mute); text-align: center; margin-top: 24px; }
+
+  @media print {
+    .nav, .print-tip { display: none; }
+    body { font-size: 12px; }
+    .resume { padding: 0; max-width: none; }
+    h3.r-sec { margin: 14px 0 6px; }
+    ul.r-list { font-size: 11.5px; line-height: 1.55; }
+    .r-name { font-size: 22px; }
+    a { color: var(--text); text-decoration: none; }
+  }
+  @page { margin: 14mm; }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <span class="nav-brand">梁可悦</span>
+    <a href="index.html">主页</a>
+    <a href="resume.html">简历</a>
+    <span class="spacer"></span>
+    <a href="javascript:window.print()">打印 / 存为 PDF</a>
+  </div>
+</nav>
+
+<div class="resume">
+
+  <div class="r-head">
+    <h1 class="r-name">梁可悦</h1>
+    <!-- 求职意向：自行修改 -->
+    <p class="r-intent">求职意向：<span class="todo">用户运营 / 私域运营（自行修改）</span></p>
+    <!-- 联系方式：把「待填写」替换成真实信息 -->
+    <div class="r-contact">
+      <span>手机：<span class="todo">待填写</span></span>
+      <span>邮箱：<span class="todo">待填写</span></span>
+      <span>微信：<span class="todo">待填写</span></span>
+      <span>现居：<span class="todo">待填写</span></span>
+      <span>到岗：<span class="todo">待填写</span></span>
+    </div>
+  </div>
+
+  <!-- 基本信息：自行填写 -->
+  <h3 class="r-sec">基本信息</h3>
+  <p class="r-note">
+    性别：<span class="todo">待填写</span> ｜ 民族：<span class="todo">待填写</span> ｜ 出生年月：<span class="todo">待填写</span>
+    ｜ 籍贯：<span class="todo">待填写</span> ｜ 政治面貌：<span class="todo">待填写</span>
+  </p>
+
+  <h3 class="r-sec">教育背景</h3>
+  <div class="r-row">
+    <span class="r-org">广州新华学院 <span class="r-role">数字经济 · 本科</span></span>
+    <span class="r-date"><span class="todo">202X.09 - 202X.06</span></span>
+  </div>
+  <p class="r-note">主修课程：数字化运营、电子商务基础、新媒体运营管理、大数据挖掘、智能数据可视化技术、数字经济概论</p>
+
+  <h3 class="r-sec">实习经历</h3>
+
+  <div class="r-row">
+    <span class="r-org">佛山市小熊电器股份有限公司 <span class="r-role">私域运营 + 用户运营 实习生</span></span>
+    <span class="r-date">2026.09 - 2027.02</span>
+  </div>
+  <ul class="r-list">
+    <li><strong>社群运营</strong>：负责约 1000 个私域社群的日常活跃与维系，按品类分层运营，覆盖人群约 7-8 万人</li>
+    <li><strong>活动策划与复盘</strong>：策划每周社群限额秒杀活动，单场成交约 200 单；数据复盘驱动优化，月度活动完成率提升约 2%</li>
+    <li><strong>推送排期</strong>：根据各部门需求统筹私域社群推送排期</li>
+    <li><strong>UGC / KOC</strong>：策划活动引导用户产出 UGC，沉淀优质 KOC 与品牌口碑</li>
+    <li><strong>新品试用</strong>：对接需求部门筛选试用用户，收集并回流反馈助力产品优化</li>
+    <li><strong>拉新留存</strong>：策划回馈顾客活动（异业合作等），提升拉新与留存</li>
+  </ul>
+
+  <div class="r-row" style="margin-top:12px">
+    <span class="r-org">佛山市扬森网络科技有限公司 <span class="r-role">内容运营 实习生</span></span>
+    <span class="r-date">2026.07 - 2026.09</span>
+  </div>
+  <ul class="r-list">
+    <li><strong>账号运营</strong>：独立运营「粤探」「粤探四眼仔榴莲」两个全平台账号（抖音、小红书、视频号）</li>
+    <li><strong>内容策划</strong>：对接品牌方，撰写视频大纲与脚本，为拍摄执行打基础</li>
+    <li><strong>内容生产</strong>：负责视频拍摄与剪辑</li>
+    <li><strong>直播运营</strong>：担任副播，负责跟播、上链接等直播执行工作</li>
+    <li><strong>私域承接</strong>：运营私域粉丝群，策划回馈活动提升粉丝留存</li>
+  </ul>
+  <p class="r-note">账号体量：「粤探」抖音粉丝 58 万+，作品 650+，累计点赞 360 万+（第三方数据平台统计）；「粤探四眼仔榴莲」<span class="todo">粉丝量待填写</span></p>
+
+  <h3 class="r-sec">专业技能</h3>
+  <div class="r-skills">
+    <span>私域社群运营</span>·<span>用户运营</span>·<span>活动策划与执行</span>·<span>数据复盘</span>·<span>用户拉新留存</span>·<span>UGC / KOC 培育</span>·<span>新媒体内容运营</span>·<span>脚本撰写</span>·<span>拍摄剪辑</span>·<span>直播运营</span>·<span>跨部门协作</span>·<span>数据可视化</span>
+  </div>
+
+  <h3 class="r-sec">自我评价</h3>
+  <!-- 自我评价：自行撰写 -->
+  <p class="r-note todo">（留给你自己写，2-3 句即可：最突出的能力 + 一个具体成绩 + 职业态度。）</p>
+
+  <p class="print-tip">浏览器 Ctrl+P / ⌘+P 可直接打印或另存为 PDF，整页为一页 A4。</p>
+
+</div>
+</body>
+</html>
