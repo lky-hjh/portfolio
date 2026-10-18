@@ -1,5 +1,4 @@
-# Portfolio · 梁可悦
-
+# Portfolio
 用户运营 / 私域运营方向的个人求职主页。静态站点，GitHub Pages 托管。
 
 - 在线地址：https://lky-hjh.github.io/portfolio/
